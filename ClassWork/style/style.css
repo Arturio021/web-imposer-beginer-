@@ -31,6 +31,7 @@ p {
 /* Header */
 
 .header {
+    color: white;
     padding-bottom: 200px;
     background: rgba(51, 51, 102, 1);
     background: -moz-linear-gradient( left, rgba(51, 51, 102, 1) 0%, rgba(51, 51, 51, 1) 100%);
@@ -50,8 +51,6 @@ p {
 .sectionOne {
     display: flex;
     justify-content: space-between;
-    flex-wrap: wrap;
-    color: white;
 }
 
 .sectionOneMainText {
@@ -178,4 +177,78 @@ p {
 .creadits {
     font-size: 14px;
     color: #d4cee3;
+}
+
+
+/* Responsive */
+
+
+/* 992px - 1200px */
+
+@media screen and (max-width:1200px) {
+    .container {
+        width: 960px;
+    }
+}
+
+
+/* 768px - 992px */
+
+@media screen and (max-width:992px) {
+    .container {
+        width: 720px;
+    }
+    .sectionOne {
+        flex-direction: column;
+    }
+    .sectionOneMainText {
+        width: 100%;
+    }
+    .desktop {
+        display: block;
+        margin: 72px auto 0;
+    }
+    .blocks {
+        flex-direction: column;
+    }
+    .skill {
+        width: auto;
+        margin-bottom: 30px;
+    }
+    .btnForm {
+        margin-top: 15px;
+        margin-left: 0;
+    }
+}
+
+
+/* 576px - 768px */
+
+@media screen and (max-width:768px) {
+    .container {
+        width: 540px;
+    }
+    .desktop {
+        width: 100%;
+    }
+    .btn {
+        margin-left: 0;
+        margin-top: 20px;
+        width: 100%;
+    }
+    .input {
+        width: 92%;
+    }
+}
+
+
+/* 0px - 576px */
+
+@media screen and (max-width:576px) {
+    .container {
+        width: 90%;
+    }
+    .input {
+        width: 85%;
+    }
 }
